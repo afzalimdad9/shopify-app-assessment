@@ -1,0 +1,9 @@
+-- CreateTable
+CREATE TABLE "Ticket" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "title" TEXT NOT NULL,
+    "desc" TEXT NOT NULL,
+    "date" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "status" TEXT NOT NULL DEFAULT 'pending',
+    "userId" BIGINT
+);
